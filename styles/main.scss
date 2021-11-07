@@ -1,0 +1,134 @@
+.cards-home {
+  background-image: url("../public/fundo.png");
+  padding-bottom: 40px;
+}
+
+.about-home {
+  // background-image: url('../public/artem3.jpg');
+  // background-size: 100% 100%;
+  // height: 800px;
+  background-color: #222957;
+}
+
+.btn-blue {
+  background-color: #222957;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-blue-degrade {
+  background: linear-gradient(90deg, #485bd4, #222957);
+  color: white;
+  font-weight: 700;
+}
+.btn-blue:hover {
+  color: #222957;
+  border: solid #222957 1px;
+}
+
+.btn-white {
+  background-color: white;
+  color: #222957;
+  font-weight: 600;
+}
+
+.btn-white:hover {
+  color: white;
+  border: solid white 1px;
+}
+
+.nav-link {
+  color: #222957;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.text-hero {
+  color: #222957;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.cards-services {
+  background-color: #222957;
+  color: white;
+}
+
+.footer {
+  background-color: #222957;
+}
+
+.curriculum-card-title {
+  color: #222957;
+  font-weight: 600;
+  text-align: center;
+  font-size: 28px;
+}
+.icon-list {
+  font-size: 48px;
+  color: #222957;
+}
+
+.contact {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 3;
+  background: linear-gradient(90deg, #485bd4, #222957);
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  overflow: hidden;
+  float: left;
+  transition: 0.3s ease;
+}
+
+.btn-nav {
+  width: 55px;
+  padding-top: 12px;
+  padding-right: 15px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.text-title-about {
+  color: #222957;
+  font-weight: 600;
+}
+
+.text-body-about {
+  text-align: justify;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .curriculum-list {
+    font-size: 25px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+  .footer-container img {
+    width: 30%;
+  }
+  .text-title-about {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .curriculum-list {
+    font-size: 20px;
+  }
+
+  .footer-container img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footer-container .footer-link {
+    text-decoration: none;
+  }
+  .text-title-about {
+    font-size: 22px;
+  }
+}
