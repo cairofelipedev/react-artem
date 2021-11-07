@@ -6,6 +6,8 @@ import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
+import styles from '../../styles/main.module.scss'
+
 export default function AppNavBar() {
   return (
     <>
@@ -28,7 +30,7 @@ export default function AppNavBar() {
               <nav>
                 <Link
                   variant="button"
-                  className="nav-link"
+                  className={styles.navlink}
                   href="quem-somos"
                   sx={{ my: 1, mx: 1.5 }}
                 >
@@ -37,7 +39,7 @@ export default function AppNavBar() {
               </nav>
             </Toolbar>
           </Toolbar>
-          <Button endIcon={<WhatsAppIcon />} className="btn-blue-degrade" href="https://api.whatsapp.com/send?phone=5586995620722" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+          <Button endIcon={<WhatsAppIcon />} className={styles.btnbluedegrade} href="https://api.whatsapp.com/send?phone=5586995620722" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
             AGENDAR
           </Button>
         </Toolbar>

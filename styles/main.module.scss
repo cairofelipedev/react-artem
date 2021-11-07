@@ -1,3 +1,15 @@
+.navlink {
+  color: #222957;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btnbluedegrade {
+  background: linear-gradient(90deg, #485bd4, #222957);
+  color: white;
+  font-weight: 700;
+}
+
 .cards-home {
   background-image: url("../public/fundo.png");
   padding-bottom: 40px;
@@ -16,11 +28,8 @@
   font-weight: 700;
 }
 
-.btn-blue-degrade {
-  background: linear-gradient(90deg, #485bd4, #222957);
-  color: white;
-  font-weight: 700;
-}
+
+
 .btn-blue:hover {
   color: #222957;
   border: solid #222957 1px;
@@ -35,12 +44,6 @@
 .btn-white:hover {
   color: white;
   border: solid white 1px;
-}
-
-.nav-link {
-  color: #222957;
-  text-decoration: none;
-  font-weight: 700;
 }
 
 .text-hero {
