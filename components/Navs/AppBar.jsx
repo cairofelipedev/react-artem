@@ -5,15 +5,14 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-
 import styles from '../../styles/main.module.scss'
 
 export default function AppNavBar() {
   return (
     <>
       <AppBar
+        className={styles.appbar}
         position="static"
-        color=""
         elevation={0}
         sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
       >
@@ -30,7 +29,6 @@ export default function AppNavBar() {
               <nav>
                 <Link
                   variant="button"
-                  className={styles.navlink}
                   href="quem-somos"
                   sx={{ my: 1, mx: 1.5 }}
                 >
@@ -39,9 +37,11 @@ export default function AppNavBar() {
               </nav>
             </Toolbar>
           </Toolbar>
-          <Button endIcon={<WhatsAppIcon />} className={styles.btnbluedegrade} href="https://api.whatsapp.com/send?phone=5586995620722" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-            AGENDAR
-          </Button>
+          <div className={styles.btnNav}>
+            <Button endIcon={<WhatsAppIcon />} href="https://api.whatsapp.com/send?phone=5586995620722" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+              AGENDAR
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
     </>

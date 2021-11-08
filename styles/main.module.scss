@@ -1,13 +1,40 @@
-.navlink {
-  color: #222957;
-  text-decoration: none;
-  font-weight: 700;
+.appbar {
+  background-color: white;
+  nav {
+    a {
+      color: #222957;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+  .btnNav a {
+    background: linear-gradient(90deg, #485bd4, #222957);
+    color: white;
+    font-weight: 700;
+  }
 }
 
-.btnbluedegrade {
+
+.contact {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 3;
   background: linear-gradient(90deg, #485bd4, #222957);
-  color: white;
-  font-weight: 700;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  overflow: hidden;
+  float: left;
+  transition: 0.3s ease;
+
+  a {
+    width: 55px;
+    padding-top: 12px;
+    padding-right: 15px;
+    background-color: transparent;
+    border: transparent;
+  }
 }
 
 .cards-home {
@@ -27,8 +54,6 @@
   color: white;
   font-weight: 700;
 }
-
-
 
 .btn-blue:hover {
   color: #222957;
@@ -71,29 +96,6 @@
   font-size: 48px;
   color: #222957;
 }
-
-.contact {
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  z-index: 3;
-  background: linear-gradient(90deg, #485bd4, #222957);
-  width: 55px;
-  height: 55px;
-  border-radius: 50px;
-  overflow: hidden;
-  float: left;
-  transition: 0.3s ease;
-
-  a {
-    width: 55px;
-    padding-top: 12px;
-    padding-right: 15px;
-    background-color: transparent;
-    border: transparent;
-  }
-}
-
 
 .text-title-about {
   color: #222957;
