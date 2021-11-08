@@ -25,7 +25,7 @@ export default function AppNavBar() {
               <Image src="/logo.png" alt="Artem" width={200} height={30} />
             </Link>
           </Typography>
-          <Toolbar sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Toolbar sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
             <Toolbar sx={{ flexWrap: 'wrap' }}>
               <nav>
                 <Link
