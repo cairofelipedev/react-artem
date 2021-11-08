@@ -72,7 +72,7 @@ export default function ContentAbout() {
               </Typography>
               <Typography className={styles.textBodyAbout}>
                 {/* {text.description} */}
-                Exercer medicina com ética e qualidade, utilizando tecnologia e informações voltadas para a o diagnóstico e tratamento com uma grande dose de humanidade, acolhimento e um jeito próprio de encantar!
+                Exercer medicina com ética e qualidade, utilizando tecnologia e informações voltadas para o diagnóstico e tratamento com uma grande dose de humanidade, acolhimento e um jeito próprio de encantar!
               </Typography>
             </Box>
             <Box 
