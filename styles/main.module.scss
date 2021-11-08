@@ -14,7 +14,6 @@
   }
 }
 
-
 .contact {
   position: fixed;
   bottom: 20px;
@@ -49,98 +48,81 @@
     color: white;
     font-weight: 700;
   }
+
+  .btnBlue:hover {
+    background-color: white;
+    color: #222957;
+    border: solid #222957 1px;
+  }
 }
 
-.about-home {
-  // background-image: url('../public/artem3.jpg');
-  // background-size: 100% 100%;
-  // height: 800px;
+.aboutHome {
   background-color: #222957;
+
+  .btnWhite {
+    background-color: white;
+    color: #222957;
+    font-weight: 600;
+  }
+
+  .btnWhite:hover {
+    background-color: #222957;
+    color: white;
+    border: solid white 1px;
+  }
 }
-
-.btn-blue {
-  background-color: #222957;
-  color: white;
-  font-weight: 700;
-}
-
-.btn-blue:hover {
-  color: #222957;
-  border: solid #222957 1px;
-}
-
-.btn-white {
-  background-color: white;
-  color: #222957;
-  font-weight: 600;
-}
-
-.btn-white:hover {
-  color: white;
-  border: solid white 1px;
-}
-
-.text-hero {
-  color: #222957;
-  margin-bottom: 50px;
-  font-weight: 600;
-}
-
-
 
 .footer {
   background-color: #222957;
 }
 
-.curriculum-card-title {
+.curriculumTitle {
   color: #222957;
   font-weight: 600;
   text-align: center;
   font-size: 28px;
 }
-.icon-list {
+.curriculumIcon {
   font-size: 48px;
   color: #222957;
 }
 
-.text-title-about {
+.textTitleAbout {
   color: #222957;
   font-weight: 600;
 }
 
-.text-body-about {
+.textBodyAbout {
   text-align: justify;
   font-size: 20px;
 }
 @media screen and (min-width: 768px) {
-  .curriculum-list {
+  .curriculumList {
     font-size: 25px;
   }
-  .footer-container {
+  .footerContainer {
     display: flex;
     align-items: center;
   }
-  .footer-container img {
+  .footerContainer img {
     width: 30%;
   }
-  .text-title-about {
+  .textTitleAbout {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .curriculum-list {
+  .curriculumList {
     font-size: 20px;
   }
 
-  .footer-container img {
+  .footerContainer img {
     width: 100%;
     padding-bottom: 20px;
   }
-  .footer-container .footer-link {
-    text-decoration: none;
-  }
-  .text-title-about {
+ 
+  .textTitleAbout {
     font-size: 22px;
   }
 }

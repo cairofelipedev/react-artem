@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
+import styles from '../../styles/main.module.scss'
 
 function Copyright(props) {
   return (
@@ -35,7 +36,7 @@ export default function Footer() {
     <>
       {/* Footer */}
       <Box
-        className="footer"
+        className={styles.footer}
         maxWidth="full"
         component="footer"
         sx={{
@@ -44,7 +45,7 @@ export default function Footer() {
           py: [3, 6],
         }}
       >
-        <Container className="footer-container">
+        <Container className={styles.footerContainer}>
         <img src="/artem2.jpg" alt="Artem" />
           <Grid container spacing={4} justifyContent="space-evenly">
             {footers.map((footer) => (

@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Typography from '@material-ui/core/Typography';
 import CarouselDr from '../Carousel/CarouselDr'
+import styles from '../../styles/main.module.scss'
 
 export default function CardsCurriculum() {
   return (
@@ -18,7 +19,7 @@ export default function CardsCurriculum() {
             md={4}
           >
             <Card>
-              <Typography pt={2} className="curriculum-card-title">
+              <Typography pt={2} className={styles.curriculumTitle}>
                 Dr. Alcino Sá
               </Typography>
               <CardContent>
@@ -32,7 +33,7 @@ export default function CardsCurriculum() {
             md={4}
           >
             <Card>
-              <Typography pt={2} className="curriculum-card-title">
+              <Typography pt={2} className={styles.curriculumTitle}>
                 Currículo
               </Typography>
               <CardContent>
@@ -47,32 +48,32 @@ export default function CardsCurriculum() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',}}
-                    pb={3} className="curriculum-list">
-                  <ArrowRightIcon className="icon-list" />
+                    pb={3} className={styles.curriculumList}>
+                  <ArrowRightIcon className={styles.curriculumIcon} />
                     Residência médica em clínica médica hospital Héliopolis-SP
                   </Typography>
                   <Typography  sx={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',}}
-                    pb={3} className="curriculum-list">
-                  <ArrowRightIcon className="icon-list" />
+                    pb={3} className={styles.curriculumList}>
+                  <ArrowRightIcon className={styles.curriculumIcon} />
                     Cardiologia e Ecocardiografia e Hipertensão Arterial Instituto Dante Pazzanese de Cardiologia.
                   </Typography>
                   <Typography  sx={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',}}
-                    pb={3} className="curriculum-list">
-                  <ArrowRightIcon className="icon-list" />
+                    pb={3} className={styles.curriculumList}>
+                  <ArrowRightIcon className={styles.curriculumIcon} />
                     Membro do Departamento de Imagem da Sociedade Brasileira de Cardiologia.
                   </Typography>
                   <Typography  sx={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',}}
-                    pb={3} className="curriculum-list">
-                  <ArrowRightIcon className="icon-list" /> Membro da Sociedade Brasileira de Cardiologia
+                    pb={3} className={styles.curriculumList}>
+                  <ArrowRightIcon className={styles.curriculumIcon} /> Membro da Sociedade Brasileira de Cardiologia
                   </Typography>
                 </Box>
               </CardContent>
