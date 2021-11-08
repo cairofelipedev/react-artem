@@ -84,15 +84,16 @@
   overflow: hidden;
   float: left;
   transition: 0.3s ease;
+
+  a {
+    width: 55px;
+    padding-top: 12px;
+    padding-right: 15px;
+    background-color: transparent;
+    border: transparent;
+  }
 }
 
-.btnnav {
-  width: 55px;
-  padding-top: 12px;
-  padding-right: 15px;
-  background-color: transparent;
-  border: transparent;
-}
 
 .text-title-about {
   color: #222957;
