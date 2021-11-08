@@ -37,9 +37,18 @@
   }
 }
 
-.cards-home {
+.cardsHome {
   background-image: url("../public/fundo.png");
   padding-bottom: 40px;
+  .cardService {
+    background-color: #222957;
+    color: white;
+  }
+  .btnBlue {
+    background: #222957;
+    color: white;
+    font-weight: 700;
+  }
 }
 
 .about-home {
@@ -77,10 +86,7 @@
   font-weight: 600;
 }
 
-.cards-services {
-  background-color: #222957;
-  color: white;
-}
+
 
 .footer {
   background-color: #222957;

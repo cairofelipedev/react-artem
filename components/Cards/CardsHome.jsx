@@ -13,6 +13,7 @@ import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import AddToQueueIcon from '@material-ui/icons/AddToQueue';
 
+import styles from '../../styles/main.module.scss'
 
 
 
@@ -32,7 +33,7 @@ import AddToQueueIcon from '@material-ui/icons/AddToQueue';
 export default function CardsHome() {
   return (
     <>
-      <Container className="cards-home" maxWidth="full" component="main">
+      <Container className={styles.cardsHome} maxWidth="full" component="main">
         <Container>
           <Grid pb={4} pt={4} container spacing={2} alignItems="flex-center" justifyContent="center">
             {/* {tiers.map((tier) => ( */}
@@ -41,7 +42,7 @@ export default function CardsHome() {
               xs={12}
               md={4}
             >
-              <Box className="cards-services"
+              <Box className={styles.cardService}
                 sx={{
                   pt: 5,
                   mb: 2,
@@ -62,7 +63,7 @@ export default function CardsHome() {
               xs={12}
               md={4}
             >
-              <Box className="cards-services"
+              <Box className={styles.cardService}
                 sx={{
                   pt: 5,
                   mb: 2,
@@ -83,7 +84,7 @@ export default function CardsHome() {
               xs={12}
               md={4}
             >
-              <Box className="cards-services"
+              <Box className={styles.cardService}
                 sx={{
                   pt: 5,
                   mb: 2,
@@ -112,12 +113,12 @@ export default function CardsHome() {
               <Typography gutterBottom variant="h4" component="div">
                 Hipertensão Arterial
               </Typography>
-              <Typography variant="body" color="text.secondary">
+              <Typography  color="text.secondary">
                 A Hipertensão Arterial acomete cerca de 30% da população adulta e é a principal causa isolada de morte cardiovascular no mundo. É também a principal causa de acidente vascular cerebral, e uma da sprincipais causas de infarto, insuficiência cardíaca, insuficiência renal e cegueira. Diagnosticar é tratar a hipertensão salva vidas.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button endIcon={<WhatsAppIcon />} href="https://api.whatsapp.com/send?phone=5586995620722" className="btn-blue" fullWidth>
+              <Button endIcon={<WhatsAppIcon />} href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnBlue} fullWidth>
                 FALE AGORA COM UM ESPECIALISTA
               </Button>
             </CardActions>
