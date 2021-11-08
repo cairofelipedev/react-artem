@@ -13,7 +13,7 @@ export default function AboutHome() {
           <Typography align="justify" variant="h5" color="white" component="p" pb={4}>
             A Artem é uma empresa que presta serviço médico especializado e individualizado na área de cardiologia e hipertensão arterial, integrando conceitos modernos e novas tecnologias da medicina atual ao atendimento ético e humanizado da medicina clássica.
           </Typography>
-          <Image src="/artem2.jpg" alt="Artem" width={773} height={133} />
+          <Image src="/artem2.jpg" alt="Artem" width={915} height={337} />
           <br/>
           <Button className={styles.btnWhite} href="quem-somos" sx={{ my: 1, mx: 1.5 }}>
             Saiba mais
