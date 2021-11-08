@@ -12,7 +12,7 @@ export default function CardsCurriculum() {
   return (
     <>
       <Container maxWidth="full" component="main">
-        <Grid p={4} container alignItems="flex-center" justifyContent="center">
+        <Grid  className={styles.curriculum} p={4} container alignItems="flex-center" justifyContent="center">
           <Grid
             item
             xs={12}

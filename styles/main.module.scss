@@ -76,53 +76,69 @@
   background-color: #222957;
 }
 
-.curriculumTitle {
-  color: #222957;
-  font-weight: 600;
-  text-align: center;
-  font-size: 28px;
-}
-.curriculumIcon {
-  font-size: 48px;
-  color: #222957;
-}
-
-.textTitleAbout {
-  color: #222957;
-  font-weight: 600;
-}
-
-.textBodyAbout {
-  text-align: justify;
-  font-size: 20px;
-}
-@media screen and (min-width: 768px) {
-  .curriculumList {
-    font-size: 25px;
-  }
-  .footerContainer {
-    display: flex;
-    align-items: center;
-  }
-  .footerContainer img {
-    width: 30%;
-  }
-  .textTitleAbout {
+.curriculum {
+  .curriculumTitle {
+    color: #222957;
+    font-weight: 600;
+    text-align: center;
     font-size: 28px;
+  }
+  .curriculumIcon {
+    font-size: 48px;
+    color: #222957;
+  }
+}
+
+.aboutPage {
+  .textTitleAbout {
+    color: #222957;
+    font-weight: 600;
+  }
+
+  .textBodyAbout {
+    text-align: justify;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .curriculum {
+    .curriculumList {
+      font-size: 25px;
+    }
+  }
+
+  .footer {
+    .footerContainer {
+      display: flex;
+      align-items: center;
+      img {
+        width: 30%;
+      }
+    }
+  }
+  .aboutPage {
+    .textTitleAbout {
+      font-size: 28px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .curriculumList {
-    font-size: 20px;
+  .curriculum {
+    .curriculumList {
+      font-size: 20px;
+    }
   }
-
-  .footerContainer img {
-    width: 100%;
-    padding-bottom: 20px;
+  .footer {
+    .footerContainer img {
+      width: 100%;
+      padding-bottom: 20px;
+    }
   }
- 
-  .textTitleAbout {
-    font-size: 22px;
+  .aboutPage {
+    .textTitleAbout {
+      font-size: 22px;
+    }
   }
 }

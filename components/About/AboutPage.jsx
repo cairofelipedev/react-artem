@@ -28,7 +28,7 @@ export default function ContentAbout() {
   return (
     <>
       <Container maxWidth="full" component="main" className="animate__animated animate__fadeIn animate__delay-0.5s">
-        <Container>
+        <Container className={styles.aboutPage}>
           {/* {texts_about.map((text) => ( */}
             <Box 
               sx={{
