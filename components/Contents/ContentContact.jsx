@@ -35,26 +35,34 @@ export default function PageContentContact() {
     <>
       <Container className={styles.pageContact} maxWidth="full" component="main">
         <Container>
-          <Grid mt={0.1} pb={4} pt={4} container spacing={2} alignItems="flex-center" justifyContent="center">
+          <Grid className={styles.gridContact} pb={4} pt={4} container spacing={2} alignItems="flex-center" justifyContent="center">
             {/* {tiers.map((tier) => ( */}
             <Grid
               item
               xs={12}
               md={4}
             >
-              <Box className={styles.cardService}
+              <Box
+                className={styles.cardContact}
                 sx={{
-                  pt: 5,
-                  mb: 2,
-                  height: 200,
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  alignContent: 'center',
+                  height: 75,
                 }}
               >
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                }}>
+                  <WhatsAppIcon />
+                  <span>WhatsApp</span>
+                </div>
                 <Typography align="center">
-                  <LocalHospitalIcon sx={{ fontSize: 40 }} />
-                </Typography>
-                <Typography align="center" component="h2" variant="h5">
                   {/* {tier.title} */}
-                  Serviço médico especializado e indiviadualizado
+                  Acessar
                 </Typography>
               </Box>
             </Grid>
@@ -63,7 +71,7 @@ export default function PageContentContact() {
               xs={12}
               md={4}
             >
-              <Box className={styles.cardService}
+              <Box className={styles.cardContact}
                 sx={{
                   pt: 5,
                   mb: 2,
@@ -84,7 +92,7 @@ export default function PageContentContact() {
               xs={12}
               md={4}
             >
-              <Box className={styles.cardService}
+              <Box className={styles.cardContact}
                 sx={{
                   pt: 5,
                   mb: 2,
