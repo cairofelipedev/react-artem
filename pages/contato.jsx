@@ -8,9 +8,9 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 
 /* Components Body */
-import AboutContent from '../components/Contents/AboutPage'
+import ContactContent from '../components/Contents/ContentContact'
 
-function AboutPage() {
+function ContactPage() {
   return (
     <React.Fragment>
        <Head>
@@ -25,14 +25,12 @@ function AboutPage() {
       <CssBaseline />
       <AppBar />
       <ButtonNavWhats />
-
-      <AboutContent />
-
+      <ContactContent />
       <Footer />
     </React.Fragment>
   );
 }
 
 export default function Home() {
-  return <AboutPage />;
+  return <ContactPage />;
 }

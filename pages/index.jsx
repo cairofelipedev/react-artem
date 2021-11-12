@@ -2,7 +2,7 @@ import * as React from 'react';
 import Head from 'next/head'
 import AppBar from '../components/Navs/AppBar'
 import Hero from '../components/Hero/HeroHome'
-import AboutHome from '../components/About/AboutHome'
+import AboutHome from '../components/Contents/AboutHome'
 import CardsHome from '../components/Cards/CardsHome'
 import CardsCurriculum from '../components/Cards/CardsCurriculum'
 import Footer from '../components/Navs/Footer';
