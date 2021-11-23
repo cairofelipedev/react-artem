@@ -1,23 +1,30 @@
-import Image from 'next/image'
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+import styles from '../../styles/main.module.scss'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import Container from '@material-ui/core/Container'
 import 'animate.css';
 
 export default function Hero() {
   return (
     <>
-      {/* Hero unit */}
-      <Container maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
-        <Typography
-          className="animate__animated animate__fadeInUp animate__delay-0.6s"
-          component="h1"
-          variant="h2"
-          align="center"
-          color="text.primary"
-          gutterBottom
-        >
-          <Image src="/artem.png" alt="Artem" width={1080} height={525} />
-        </Typography>
+      <Container className={styles.Hero} maxWidth="full" component="main" sx={{ pt: 8, pb: 6 }}>
+        <Container>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            container
+            className="animate__animated animate__fadeInUp animate__delay-0.6s"
+          >
+            <Typography
+              className={styles.titleMain}
+            >
+              Cardiologia é mais
+              do que medicina...
+              é uma arte
+            </Typography>
+          </Grid>
+        </Container>
       </Container>
       {/* End hero unit */}
     </>
