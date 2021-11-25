@@ -13,7 +13,6 @@ export default function AppNavBar() {
     <>
       <AppBar
         className={styles.appbar}
-        color=""
         position="static"
         elevation={0}
         sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}

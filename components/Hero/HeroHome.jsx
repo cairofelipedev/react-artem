@@ -23,6 +23,11 @@ export default function Hero() {
               do que medicina...
               é uma arte
             </Typography>
+            <Typography
+              className={styles.titleSecondary}
+            >
+              SEJA BEM VINDO À UM ATENDIMENTO PERSONALIZADO
+            </Typography>
           </Grid>
         </Container>
       </Container>
