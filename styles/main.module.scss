@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
 .appbar {
-  background: #1d436c!important;
+  background: #1d436c !important;
   padding-top: 10px;
 
   .nav {
@@ -125,19 +125,20 @@
     font-size: 20px;
   }
 }
+.HeroMain {
+  .Hero {
+    background-image: url("../public/hero.jpg");
+    align-items: center;
+    display: flex;
 
-.Hero {
-  background-image: url("../public/hero.jpg");
-  align-items: center;
-  display: flex;
-
-  .titleMain {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 700;
-    color: #222957;
-  }
-  .titleSecondary {
-    padding-top:10px;
+    .titleMain {
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 700;
+      color: #222957;
+    }
+    .titleSecondary {
+      padding-top: 10px;
+    }
   }
 }
 
