@@ -26,8 +26,8 @@ function HomePage() {
       <AppBar />
       <ButtonNavWhats />
       <Hero />
-      <CardsHome />
       <AboutHome />
+      <CardsHome />
       <CardsCurriculum />
       <Footer />
     </React.Fragment>
