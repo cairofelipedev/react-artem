@@ -28,7 +28,8 @@
   bottom: 20px;
   right: 10px;
   z-index: 3;
-  background: linear-gradient(90deg, #485bd4, #222957);
+  // background: linear-gradient(90deg, #485bd4, #222957);
+  background: #1d436c;
   width: 55px;
   height: 55px;
   border-radius: 50px;
@@ -134,7 +135,7 @@
     .titleMain {
       font-family: "Roboto Condensed", sans-serif;
       font-weight: 700;
-      color: #222957;
+      color: #1d436c;
     }
     .titleSecondary {
       padding-top: 10px;
@@ -174,6 +175,21 @@
     .titleMain {
       font-size: 72px;
       line-height: 70px;
+    }
+    .btnHero1 {
+      margin-top: 30px;
+      color: #1d436c;
+      border: 1px solid #1d436c;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-right: 40px;
+    }
+    .btnHero2 {
+      margin-top: 30px;
+      background-color: #1d436c;
+      color: white;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 }

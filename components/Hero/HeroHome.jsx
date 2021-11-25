@@ -2,6 +2,7 @@ import styles from '../../styles/main.module.scss'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
+import Button from '@material-ui/core/Button'
 import 'animate.css';
 
 export default function Hero() {
@@ -30,6 +31,12 @@ export default function Hero() {
                 SEJA BEM VINDO À UM ATENDIMENTO PERSONALIZADO
               </Typography>
             </Grid>
+            <Button href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnHero1}>
+              CONTATO
+            </Button>
+            <Button href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnHero2}>
+              A ARTEM
+            </Button>
           </Container>
         </Container>
       </div>
