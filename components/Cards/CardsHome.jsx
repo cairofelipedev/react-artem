@@ -1,17 +1,7 @@
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
-
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import AddToQueueIcon from '@material-ui/icons/AddToQueue';
+import Image from 'next/image'
 
 import styles from '../../styles/main.module.scss'
 
@@ -35,94 +25,172 @@ export default function CardsHome() {
     <>
       <Container className={styles.cardsHome} maxWidth="full" component="main">
         <Container>
-          <Grid pb={4} pt={4} container spacing={2} alignItems="flex-center" justifyContent="center">
+          <Typography
+            className={styles.titleMain}
+          >
+            Serviços Oferecidos
+          </Typography>
+          <Grid pb={4} pt={4} container spacing={2}  justifyContent="center">
             {/* {tiers.map((tier) => ( */}
             <Grid
               item
-              xs={12}
-              md={4}
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
             >
-              <Box className={styles.cardService}
-                sx={{
-                  pt: 5,
-                  mb: 2,
-                  height: 200,
-                }}
+              <Grid
+                item
+                xs={12}
+                align="center"
               >
-                <Typography align="center">
-                  <LocalHospitalIcon sx={{ fontSize: 40 }} />
-                </Typography>
-                <Typography align="center" component="h2" variant="h5">
-                  {/* {tier.title} */}
-                  Serviço médico especializado e indiviadualizado
-                </Typography>
-              </Box>
+                <Image src="/card1.png" alt="Vercel Logo" width={100} height={120} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Consulta médica individualizada
+              </Typography>
             </Grid>
             <Grid
               item
-              xs={12}
-              md={4}
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
             >
-              <Box className={styles.cardService}
-                sx={{
-                  pt: 5,
-                  mb: 2,
-                  height: 200,
-                }}
+              <Grid
+                item
+                xs={12}
+                align="center"
               >
-                <Typography align="center">
-                  <AddToQueueIcon sx={{ fontSize: 40 }} />
-                </Typography>
-                <Typography align="center" component="h2" variant="h5">
-                  {/* {tier.title} */}
-                  Tecnologia medica moderna
-                </Typography>
-              </Box>
+                <Image src="/card2.png" alt="Vercel Logo" width={100} height={120} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Holter de 24h
+              </Typography>
             </Grid>
             <Grid
               item
-              xs={12}
-              md={4}
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
             >
-              <Box className={styles.cardService}
-                sx={{
-                  pt: 5,
-                  mb: 2,
-                  height: 200,
-                }}
+              <Grid
+                item
+                xs={12}
+                align="center"
               >
-                <Typography align="center">
-                  <AssignmentIcon sx={{ fontSize: 40 }} />
-                </Typography>
-                <Typography align="center" component="h2" variant="h5">
-                  {/* {tier.title} */}
-                  Atendimento ético e humanizado da medicina clássica
-                </Typography>
-              </Box>
+                <Image src="/card3.png" alt="Vercel Logo" width={100} height={120} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Mapa
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
+            >
+              <Grid
+                item
+                xs={12}
+                align="center"
+              >
+                <Image src="/card4.png" alt="Vercel Logo" width={100} height={120} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Ecodopplercadiograma
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
+            >
+              <Grid
+                item
+                xs={12}
+                align="center"
+                pt={4}
+              >
+                <Image src="/card5.png" alt="Vercel Logo" width={100} height={100} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Eletrocardiograma
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
+            >
+              <Grid
+                item
+                xs={12}
+                align="center"
+                pt={4}
+              >
+                <Image src="/card6.png" alt="Vercel Logo" width={100} height={100} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Medida da pressão aórtica central
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              container
+              justifyContent="center"
+            >
+              <Grid
+                item
+                xs={12}
+                align="center"
+                pt={4}
+              >
+                <Image src="/card7.png" alt="Vercel Logo" width={100} height={100} />
+              </Grid>
+              <Typography
+                className={styles.titleSecondary}
+                align="center"
+                pt={2}
+              >
+                Bioimpedância
+              </Typography>
             </Grid>
             {/* ))} */}
           </Grid>
-          <Card>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="300"
-              image="/pressaoarterial.jpg"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
-                Hipertensão Arterial
-              </Typography>
-              <Typography  color="text.secondary">
-                A Hipertensão Arterial acomete cerca de 30% da população adulta e é a principal causa isolada de morte cardiovascular no mundo. É também a principal causa de acidente vascular cerebral, e uma da sprincipais causas de infarto, insuficiência cardíaca, insuficiência renal e cegueira. Diagnosticar é tratar a hipertensão salva vidas.
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button endIcon={<WhatsAppIcon />} href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnBlue} fullWidth>
-                FALE AGORA COM UM ESPECIALISTA
-              </Button>
-            </CardActions>
-          </Card>
         </Container>
       </Container>
     </>

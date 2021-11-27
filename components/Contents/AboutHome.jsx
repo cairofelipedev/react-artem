@@ -8,9 +8,9 @@ export default function AboutHome() {
   return (
     <>
       {/* Hero unit */}
-      <Container className={styles.aboutHome} disableGutters maxWidth="full" component="main" sx={{ pt: 8, pb: 6 }}>
+      <Container className={styles.aboutHome} maxWidth="full" component="main" sx={{ pt: 8, pb: 6 }}>
         <Container>
-          <Grid pb={4} pt={4} container spacing={2} alignItems="flex-center" justifyContent="center">
+          <Grid pb={10} pt={4} container spacing={8} justifyContent="center">
             <Grid
               item
               xs={12}
@@ -45,8 +45,8 @@ export default function AboutHome() {
             </Grid>
             <Grid
               item
-              xs={6}
-              md={2}
+              xs={8}
+              md={3}
               container
             >
               <Box
