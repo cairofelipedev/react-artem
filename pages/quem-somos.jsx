@@ -1,14 +1,15 @@
-import * as React from 'react';
+import * as React from 'react'
 import Head from 'next/head'
 /* Components Core */
 import AppBar from '../components/Navs/AppBar'
-import Footer from '../components/Navs/Footer';
+import Footer from '../components/Navs/Footer'
 import ButtonNavWhats from '../components/Navs/ButtonNav'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 
 /* Components Body */
 import AboutContent from '../components/Contents/AboutPage'
+import ContentAbout from '../components/Contents/AboutPage'
 
 function AboutPage() {
   return (
@@ -25,9 +26,7 @@ function AboutPage() {
       <CssBaseline />
       <AppBar />
       <ButtonNavWhats />
-
-      <AboutContent />
-
+      <ContentAbout />
       <Footer />
     </React.Fragment>
   );

@@ -1,20 +1,15 @@
-import * as React from 'react';
-import Box from '@material-ui/core/Box';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import * as React from 'react'
+import Box from '@material-ui/core/Box'
+import Drawer from '@material-ui/core/Drawer'
+import DehazeIcon from '@material-ui/icons/Dehaze'
+import List from '@material-ui/core/List'
+import Divider from '@material-ui/core/Divider'
+import ListItem from '@material-ui/core/ListItem'
+import styles from '../../styles/main.module.scss'
+import Link from '@material-ui/core/Link'
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
     right: false,
   });
 
@@ -28,40 +23,62 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      className={styles.boxNav}
+      sx={{ width: 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem>
+          {/* <ListItemIcon>
+            <HomeIcon />
+          </ListItemIcon> */}
+          <Link
+            href="/"
+          >
+            HOME
+          </Link>
+        </ListItem>
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem>
+          <Link
+            href="quem-somos"
+          >
+            A ARTEM
+          </Link>
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem>
+          <Link
+            href="#"
+          >
+            SERVIÇOS
+          </Link>
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem>
+          <Link
+            href="https://api.whatsapp.com/send?phone=5586995620722"
+          >
+            CONTATO
+          </Link>
+        </ListItem>
       </List>
     </Box>
   );
 
   return (
     <div>
-      {['left', 'right', 'top', 'bottom'].map((anchor) => (
+      {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <DehazeIcon className={styles.dehazeButton} sx={{ fontSize: 30 }} onClick={toggleDrawer(anchor, true)} />
           <Drawer
             anchor={anchor}
             open={state[anchor]}

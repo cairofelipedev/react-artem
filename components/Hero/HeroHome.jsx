@@ -34,7 +34,7 @@ export default function Hero() {
             <Button href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnHero1}>
               CONTATO
             </Button>
-            <Button href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnHero2}>
+            <Button href="quem-somos" className={styles.btnHero2}>
               A ARTEM
             </Button>
           </Container>

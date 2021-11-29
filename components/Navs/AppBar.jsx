@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Link from '@material-ui/core/Link'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import WhatsAppIcon from '@material-ui/icons/WhatsApp'
 import styles from '../../styles/main.module.scss'
-import Container from '@material-ui/core/Container';
-
+import Container from '@material-ui/core/Container'
+import NavDrawer from './NavBar'
 export default function AppNavBar() {
   return (
     <>
@@ -16,58 +14,58 @@ export default function AppNavBar() {
         position="static"
       >
         <Container>
-          <Toolbar sx={{ flexWrap: 'wrap' }}>
-            <Typography href="/" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-              <Link
-                href="/"
-              >
-                <Image src="/artemwhite.png" alt="Artem" width={200} height={30} />
-              </Link>
-            </Typography>
-            <Toolbar sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
-              <Toolbar sx={{ flexWrap: 'wrap' }}>
-                <div className={styles.nav}>
-                  <Link
-                    variant="button"
-                    href="quem-somos"
-                    sx={{ my: 1, mx: 1.5 }}
-                  >
-                    A ARTEM
-                  </Link>
-                  <Link
-                    variant="button"
-                    href="quem-somos"
-                    sx={{ my: 1, mx: 1.5 }}
-                  >
-                    SERVIÇOS
-                  </Link>
-                  <Link
-                    variant="button"
-                    href="quem-somos"
-                    sx={{ my: 1, mx: 1.5 }}
-                  >
-                    CONTATO
-                  </Link>
-                  <Link
-                    variant="button"
-                    href="quem-somos"
-                    sx={{ my: 1, mx: 1.5 }}
-                  >
-                    HIPERTENSÃO SEM TENSÃO
-                  </Link>
-                  <Link
-                    href="quem-somos"
-                    pr={1}
-                  >
-                    <WhatsAppIcon sx={{ fontSize: 40 }} />
-                  </Link>
-                  <Link
-                    href="quem-somos"
-                  >
-                    <InstagramIcon sx={{ fontSize: 40 }} />
-                  </Link>
-                </div>
-              </Toolbar>
+          <Toolbar>
+            <Link
+              href="/"
+            >
+              <img src="/artemwhite.png" alt="Artem" className={styles.appImage} />
+            </Link>
+            <Toolbar sx={{ flexWrap: 'wrap' }}>
+              <div className={styles.nav}>
+                <Link
+                  variant="button"
+                  href="quem-somos"
+                  sx={{ my: 1, mx: 1.5 }}
+                  className={styles.navLink}
+                >
+                  ARTEM
+                </Link>
+                <Link
+                  variant="button"
+                  href="quem-somos"
+                  sx={{ my: 1, mx: 1.5 }}
+                  className={styles.navLink}
+                >
+                  SERVIÇOS
+                </Link>
+                <Link
+                  variant="button"
+                  href="https://api.whatsapp.com/send?phone=5586995620722"
+                  sx={{ my: 1, mx: 1.5 }}
+                  className={styles.navLink}
+                >
+                  CONTATO
+                </Link>
+                {/* <Link
+                  variant="button"
+                  href="quem-somos"
+                  sx={{ my: 1, mx: 1.5, xs: 'none', sm: 'none', md: 'block' }}
+                >
+                  HIPERTENSÃO SEM TENSÃO
+                </Link> */}
+                <Link
+                  href="https://api.whatsapp.com/send?phone=5586995620722"
+                  pr={1}
+                >
+                  <WhatsAppIcon sx={{ fontSize: 40 }} />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/artemcardiologia/"
+                >
+                  <InstagramIcon sx={{ fontSize: 40 }} />
+                </Link>
+                <NavDrawer />
+              </div>
             </Toolbar>
           </Toolbar>
         </Container>
