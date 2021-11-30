@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { Component } from "react"
+import Slider from "react-slick"
 import Image from 'next/image'
+import styles from '../../styles/main.module.scss'
 
 export default class CarouselDr extends Component {
   render() {
     const settings = {
       className: "center",
-      centerMode: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -15,13 +15,13 @@ export default class CarouselDr extends Component {
       arrows: false
     };
     return (
-      <div className="pt-6 carousel-films">
+      <div className={styles.carouselDr}>
         <Slider {...settings}>
           <div className="px-2">
-            <Image src="/Dr1.jpeg" alt="Vercel Logo" width={450} height={640} />
+            <Image className={styles.carouselImage} src="/Dr1.jpeg" alt="Vercel Logo" width={450} height={640} />
           </div>
           <div className="px-2">
-            <Image src="/Dr2.jpeg" alt="Vercel Logo" width={450} height={640} />
+            <Image className={styles.carouselImage} src="/Dr2.jpeg" alt="Vercel Logo" width={450} height={640} />
           </div>
         </Slider>
       </div>

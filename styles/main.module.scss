@@ -95,7 +95,15 @@
 }
 
 .footer {
-  background-color: #222957;
+  .titleMain {
+    color: #222957;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .titleSecondary {
+    font-family: "Lato", sans-serif;
+  }
 }
 
 .pageContact {
@@ -113,16 +121,15 @@
 }
 
 .curriculum {
-  .curriculumTitle {
-    color: #222957;
-    font-weight: 600;
+  background-image: url("../public/background1.jpg");
+  .titleMain {
     text-align: center;
-    font-size: 28px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: #1d436c;
   }
-
-  .curriculumIcon {
-    font-size: 48px;
-    color: #222957;
+  .titleSecondary {
+    font-family: "Lato", sans-serif;
   }
 }
 
@@ -186,6 +193,12 @@
   }
 }
 
+.carouselDr {
+  .carouselImage {
+    border-radius:40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .appbar {
     .appImage {
@@ -193,11 +206,6 @@
     }
     .dehazeButton {
       display: none;
-    }
-  }
-  .curriculum {
-    .curriculumList {
-      font-size: 25px;
     }
   }
 
@@ -231,15 +239,14 @@
       width: 20%;
     }
   }
+  .curriculum {
+    .titleMain {
+      font-size: 70px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .curriculum {
-    .curriculumList {
-      font-size: 20px;
-    }
-  }
-
   .footer {
     .footerContainer img {
       width: 100%;
@@ -299,6 +306,11 @@
     a {
       color: #1d436c;
       text-decoration: none;
+    }
+  }
+  .curriculum {
+    .titleMain {
+      font-size: 40px;
     }
   }
 }

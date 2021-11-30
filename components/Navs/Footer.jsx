@@ -7,7 +7,7 @@ import styles from '../../styles/main.module.scss'
 
 function Copyright(props) {
   return (
-    <Typography variant="body2" color="white" align="center" {...props}>
+    <Typography  color="#222957" align="center" {...props}>
       {'Artem Cardiologia Individualizada © '}
       {new Date().getFullYear()}
       {'.'}
@@ -44,19 +44,19 @@ export default function Footer() {
         }}
       >
         <Container className={styles.footerContainer}>
-        <img src="/artem2.jpg" alt="Artem" />
+        <img src="/artem.png" alt="Artem" />
           <Grid container spacing={4} justifyContent="space-evenly">
             {footers.map((footer) => (
               
               <Grid item xs={6} sm={3} key={footer.title}>
-                <Typography variant="h5" color="white" gutterBottom>
+                <Typography  className={styles.titleMain} color="#222957" gutterBottom>
                   {footer.title}
                 </Typography>
                 <ul>
                   {footer.description.map((item) => (
                     <li key={item}>
                       <Link style={{ textDecoration: 'none' }} href="#">
-                        <Typography variant="subtitle1" color="white">
+                        <Typography className={styles.titleSecondary} color="#222957">
                           {item}
                         </Typography>
                       </Link>
@@ -68,8 +68,8 @@ export default function Footer() {
           </Grid>
         </Container>
         <Copyright sx={{ mt: 5 }} />
-        <Typography variant="body2" color="text.primary" align="center">
-          <Link color="inherit" href="https://cairo.dev.br">
+        <Typography color="#222957" align="center">
+          <Link color="inherit" variant="body2" href="https://cairo.dev.br">
             Web Developer: Cairo Felipe Dev
           </Link>{' '}
         </Typography>
