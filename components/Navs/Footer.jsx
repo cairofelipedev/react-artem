@@ -7,7 +7,7 @@ import styles from '../../styles/main.module.scss'
 
 function Copyright(props) {
   return (
-    <Typography  color="#222957" align="center" {...props}>
+    <Typography color="#222957" align="center" {...props}>
       {'Artem Cardiologia Individualizada © '}
       {new Date().getFullYear()}
       {'.'}
@@ -15,20 +15,21 @@ function Copyright(props) {
   );
 }
 
-const footers = [
-  {
-    title: 'ARTEM',
-    description: ['Nossa História', 'Agendamento', 'Contato', 'Localização'],
-  },
-  {
-    title: 'Serviço Médico',
-    description: ['Cardiologia', 'Hipertensão arterial', 'Consultoria', 'Cursos'],
-  },
-  // {
-  //   title: 'Termos e Privacidade',
-  //   description: ['Termos de Uso', 'Política de Privacidade'],
-  // },
-];
+// const footers = [
+//   {
+//     title: 'ARTEM',
+//     description: ['Nossa História', 'Agendamento', 'Contato', 'Localização'],
+//     link: ['quem-somos','https://api.whatsapp.com/send?phone=5586995620722'],
+//   },
+//   {
+//     title: 'Serviço Médico',
+//     description: ['Cardiologia', 'Hipertensão arterial', 'Consultoria', 'Cursos'],
+//   },
+//   {
+//     title: 'Termos e Privacidade',
+//     description: ['Termos de Uso', 'Política de Privacidade'],
+//   },
+// ];
 
 export default function Footer() {
   return (
@@ -44,8 +45,8 @@ export default function Footer() {
         }}
       >
         <Container className={styles.footerContainer}>
-        <img src="/artem.png" alt="Artem" />
-          <Grid container spacing={4} justifyContent="space-evenly">
+          <img src="/artem.png" alt="Artem" />
+          {/* <Grid container spacing={4} justifyContent="space-evenly">
             {footers.map((footer) => (
               
               <Grid item xs={6} sm={3} key={footer.title}>
@@ -55,7 +56,7 @@ export default function Footer() {
                 <ul>
                   {footer.description.map((item) => (
                     <li key={item}>
-                      <Link style={{ textDecoration: 'none' }} href="#">
+                      <Link style={{ textDecoration: 'none' }} href={footer.link}>
                         <Typography className={styles.titleSecondary} color="#222957">
                           {item}
                         </Typography>
@@ -65,6 +66,78 @@ export default function Footer() {
                 </ul>
               </Grid>
             ))}
+          </Grid> */}
+          <Grid container spacing={4} justifyContent="space-evenly">
+            <Grid item xs={6} sm={3}>
+              <Typography className={styles.titleMain} color="#222957" gutterBottom>
+                ARTEM
+              </Typography>
+              <ul>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="quem-somos">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Nossa História
+                    </Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Agendamento
+                    </Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Contato
+                    </Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="quem-somos">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Localização
+                    </Typography>
+                  </Link>
+                </li>
+              </ul>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <Typography className={styles.titleMain} color="#222957" gutterBottom>
+                Serviço Médico
+              </Typography>
+              <ul>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="#servicos">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Cardiologia
+                    </Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="#servicos">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Hipertensão arterial
+                    </Typography>
+                  </Link>
+                </li>
+                <li>
+                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Consultoria
+                    </Typography>
+                  </Link>
+                </li>
+                {/* <li>
+                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
+                    <Typography className={styles.titleSecondary} color="#222957">
+                      Cursos
+                    </Typography>
+                  </Link>
+                </li> */}
+              </ul>
+            </Grid>
           </Grid>
         </Container>
         <Copyright sx={{ mt: 5 }} />

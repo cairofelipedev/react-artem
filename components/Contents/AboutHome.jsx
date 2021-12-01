@@ -26,13 +26,7 @@ export default function AboutHome() {
               <Typography
                 className={styles.titleSecondary}
               >
-                O ano era 2016. Nos corredores da secção de Hipertensão Arterial do Instituto Dante Pazzanese de
-                Cardiologia se discutia como era distinto o comportamento da Hipertensão Arterial assim como era
-                única a resposta de cada um ao tratamento. O conceito de Cardiologia Individualizada surge então
-                entre os dias corridos e às noites de sono frias e intranquilas. Se as Hipertensão teria várias causas, que
-                vão desde o consumo excessivo de sal à história familiar dos pacientes, ou seja, se havia tantas causas,
-                havia também vários tratamentos e inúmeras formas de se manifestar do ponto de vista
-                cardiovascular.
+                A existência da Artem está baseada na empatia por cada pessoa que nos busca, e pela arte envolvida no exercício desta especialidade central da medicina. Mais do que atender de forma ética e responsável, queremos encantar a todos que nos buscam pelo nosso jeito humano e diferenciado. Oferecemos conhecimento, confiança e individualização no tratamento, sendo reconhecidos como autoridade neste assunto no estado do Piauí.
               </Typography>
               <Typography
                 className={styles.titleSecondary}

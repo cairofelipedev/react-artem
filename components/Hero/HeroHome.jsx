@@ -22,8 +22,8 @@ export default function Hero() {
                 className={styles.titleMain}
               >
                 Cardiologia é mais
-                do que medicina...
-                é uma arte
+                do que medicina.
+                É uma arte!
               </Typography>
               <Typography
                 className={styles.titleSecondary}

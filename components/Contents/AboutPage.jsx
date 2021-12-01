@@ -19,7 +19,7 @@ export default function ContentAbout() {
             <Typography
               className={styles.titleMain}
             >
-              Nossa essência
+              Nossa História
             </Typography>
           </Box>
           <Box

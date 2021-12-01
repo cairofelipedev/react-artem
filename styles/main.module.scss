@@ -152,8 +152,6 @@
       margin-top: 30px;
       color: #1d436c;
       border: 1px solid #1d436c;
-      padding-left: 40px;
-      padding-right: 40px;
       margin-right: 40px;
       font-family: "Lato", sans-serif;
       font-weight: 700;
@@ -162,8 +160,6 @@
       margin-top: 30px;
       background-color: #1d436c;
       color: white;
-      padding-left: 40px;
-      padding-right: 40px;
       font-family: "Lato", sans-serif;
       font-weight: 700;
     }
@@ -230,6 +226,14 @@
       font-size: 72px;
       line-height: 70px;
     }
+    .btnHero1 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .btnHero2 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
   .aboutPage {
     .titleMain {
@@ -269,6 +273,14 @@
       text-align: center;
       font-size: 16px;
     }
+    .btnHero1 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .btnHero2 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
   .cardsHome {
     .titleMain {
@@ -299,7 +311,7 @@
       left: 20px;
     }
     .appImage {
-      width: 80%;
+      width: 90%;
     }
   }
   .boxNav {
