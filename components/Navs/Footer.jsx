@@ -88,13 +88,6 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
-                    <Typography className={styles.titleSecondary} color="#222957">
-                      Contato
-                    </Typography>
-                  </Link>
-                </li>
-                <li>
                   <Link style={{ textDecoration: 'none' }} href="quem-somos">
                     <Typography className={styles.titleSecondary} color="#222957">
                       Localização
@@ -137,6 +130,11 @@ export default function Footer() {
                   </Link>
                 </li> */}
               </ul>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <Typography className={styles.titleMain} color="#222957" gutterBottom>
+                Agende sua consulta
+              </Typography>
             </Grid>
           </Grid>
         </Container>

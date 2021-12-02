@@ -4,6 +4,7 @@ import AppBar from '../components/Navs/AppBar'
 import Hero from '../components/Hero/HeroHome'
 import AboutHome from '../components/Contents/AboutHome'
 import CardsHome from '../components/Cards/CardsHome'
+import FormHome from '../components/Contents/FormContent'
 import CardsCurriculum from '../components/Cards/CardsCurriculum'
 import Footer from '../components/Navs/Footer';
 import ButtonNavWhats from '../components/Navs/ButtonNav'
@@ -29,6 +30,7 @@ function HomePage() {
       <AboutHome />
       <CardsHome />
       <CardsCurriculum />
+      <FormHome/>
       <Footer />
     </React.Fragment>
   );
