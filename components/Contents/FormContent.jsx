@@ -1,12 +1,33 @@
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import TextField from '@material-ui/core/TextField';
+import TextField from '@material-ui/core/TextField'
+import { alpha, styled } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box';
 import styles from '../../styles/main.module.scss'
 import Button from '@material-ui/core/Button'
 
-export default function AboutHome() {
+const CssTextField = styled(TextField)({
+  '& label.Mui-focused': {
+    color: 'white',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: 'white',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: 'white',
+    },
+    '&:hover fieldset': {
+      borderColor: 'white',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: 'white',
+    },
+  },
+});
+
+export default function FormHome() {
 
   function sendEmail() {
     const form = document.getElementById('form')
@@ -16,6 +37,7 @@ export default function AboutHome() {
 
       const name = document.getElementById('name').value
       const email = document.getElementById('email').value
+      const telefone = document.getElementById('telefone').value
       const message = document.getElementById('message').value
 
       fetch('/api/email', {
@@ -26,6 +48,7 @@ export default function AboutHome() {
         body: JSON.stringify({
           name: name,
           email: email,
+          telefone: telefone,
           message: message
         })
       }).then((response) =>{
@@ -39,7 +62,7 @@ export default function AboutHome() {
 
   return (
     <>
-      <Container className={styles.aboutHome} maxWidth="full" component="main" sx={{ pt: 8, pb: 6 }}>
+      <Container className={styles.formHome} maxWidth="full" component="main" sx={{ pt: 8, pb: 6 }}>
         <Container>
           <Grid pb={10} pt={4} container spacing={2} justifyContent="center">
             <Grid
@@ -68,14 +91,15 @@ export default function AboutHome() {
               <Box
                 component="form"
                 sx={{
-                  '& > :not(style)': { m: 1, width: '25ch' },
+                  '& > :not(style)': { m: 0.5, width: '25ch' },
                 }}
                 autoComplete="off"
                 id="form"
               >
-                <TextField id="name" label="Nome" variant="outlined" />
-                <TextField id="email" label="Email" variant="outlined" />
-                <TextField id="message" label="Mensagem" variant="outlined" />
+                <CssTextField id="name" label="Nome" />
+                <CssTextField id="email" label="Email" />
+                <CssTextField id="telefone" label="Telefone" />
+                <CssTextField id="message" label="Mensagem" />
                 <Button type="submit" onClick={sendEmail}>
                   Enviar
                 </Button>

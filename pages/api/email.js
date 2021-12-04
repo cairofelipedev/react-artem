@@ -12,12 +12,12 @@ export default function sendEmail(req, res) {
   })
 
   transporter.sendMail({
-    from: `"Foo 👻" <${config.USERMAIL}>`, 
+    from: `"ARTEM CARDIOLOGIA SITE" <${config.USERMAIL}>`, 
     to: config.USERMAIL,
     replyTo: req.body.email,
     subject: "CONTATO ATRAVÉS DO SITE",
     text: req.body.message, 
-    html: `<b>${req.body.name}</b><br />${req.body.message}` 
+    html: `<b>${req.body.name}</b><br />${req.body.telefone}<br />${req.body.message}` 
   }).then((response) => { res.send(response)} )
   .catch((error) => { res.send(error)})
 
