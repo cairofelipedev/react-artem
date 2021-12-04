@@ -76,10 +76,10 @@ export default function ContentAbout() {
             </Typography>
             <Typography className={styles.textBodyAbout}>
               A existência da Artem está baseada na empatia por cada
-              pessoa que nos busca, e pela arte envolvida na cardiologia que
+              pessoa que nos busca e pela arte envolvida na cardiologia que
               no nosso entendimento é a disciplina centro de todas as
               outras áreas da medicina. Mais do que atender de forma ética
-              e responsável, queremos encantar à todos que nos buscam
+              e responsável, queremos encantar a todos que nos buscam
               pelo nosso atendimento humano e diferenciado do padrão
               atual. Queremos além disto, buscamos oferecer
               conhecimento e confiança à todos, nos tornando autoridade

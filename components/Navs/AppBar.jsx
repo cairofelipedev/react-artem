@@ -45,7 +45,7 @@ export default function AppNavBar() {
                   sx={{ my: 1, mx: 1.5 }}
                   className={styles.navLink}
                 >
-                  CONTATO
+                  AGENDAMENTO
                 </Link>
                 {/* <Link
                   variant="button"

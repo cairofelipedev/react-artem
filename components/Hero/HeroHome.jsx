@@ -28,7 +28,7 @@ export default function Hero() {
               <Typography
                 className={styles.titleSecondary}
               >
-                SEJA BEM VINDO À UM ATENDIMENTO PERSONALIZADO
+                SEJA BEM VINDO A UM ATENDIMENTO PERSONALIZADO
               </Typography>
             </Grid>
             <Button href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnHero1}>

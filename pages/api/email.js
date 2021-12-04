@@ -20,5 +20,4 @@ export default function sendEmail(req, res) {
     html: `<b>${req.body.name}</b><br />${req.body.telefone}<br />${req.body.message}` 
   }).then((response) => { res.send(response)} )
   .catch((error) => { res.send(error)})
-
 }
