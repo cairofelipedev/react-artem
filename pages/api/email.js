@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer')
-const config = require('../../config.local')
+const config = require('../../js/config.local')
 
 export default function sendEmail(req, res) {
   let transporter = nodemailer.createTransport ({
