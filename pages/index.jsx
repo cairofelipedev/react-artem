@@ -19,8 +19,8 @@ function HomePage() {
         <link rel="icon" href="/artem.ico" />
         <meta name="description" content="ARTEM CARDIOLOGIA INDIVIDUALIZADA - Serviço médico especializado e indiviadualizado" />
         <meta property="og:title" content="ARTEM CARDIOLOGIA INDIVIDUALIZADA" />
-        <meta property="og:url" content="https://react-artem.vercel.app/" />
-        <meta property="og:image" content="https://react-artem.vercel.app/artem2.jpg" />
+        <meta property="og:url" content="https://www.artemcardiologia.com.br/" />
+        <meta property="og:image" content="https://www.artemcardiologia.com.br/artem2.jpg" />
       </Head>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
