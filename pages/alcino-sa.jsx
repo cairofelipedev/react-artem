@@ -18,8 +18,8 @@ function AboutPage() {
         <link rel="icon" href="/artem.ico" />
         <meta name="description" content="Dr. Alcino Sá Cardiologista" />
         <meta property="og:title" content="DR. ALCINO SÁ - ARTEM CARDIOLOGIA INDIVIDUALIZADA" />
-        <meta property="og:url" content="https://www.artemcardiologia.com.br" />
-        <meta property="og:image" content="https://www.artemcardiologia.com.br/Dr1.jpeg" />
+        <meta property="og:url" content="https://www.artemcardiologia.com.br/alcino-sa" />
+        <meta property="og:image" content="https://www.artemcardiologia.com.br/artem2.jpg" />
       </Head>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
