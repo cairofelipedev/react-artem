@@ -1,6 +1,6 @@
 const config = {
-  USERMAIL: "atendimento@artemcardiologia.com.br",
-  PASSMAIL: "@Artem321!"
+  USERMAIL: "${{ secrets.USERMAIL }}",
+  PASSMAIL: "${{ secrets.USERPASS }}"
 }
 
 module.exports = config
