@@ -10,7 +10,7 @@ import GlobalStyles from '@material-ui/core/GlobalStyles'
 /* Components Body */
 import CardsCurriculum from '../components/Cards/CardsCurriculum'
 
-function AboutPage() {
+function AlcinoPage() {
   return (
     <React.Fragment>
        <Head>
@@ -31,6 +31,6 @@ function AboutPage() {
   );
 }
 
-export default function Home() {
-  return <AboutPage />;
+export default function AlcinoSa() {
+  return <AlcinoPage />;
 }

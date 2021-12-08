@@ -6,8 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
-
+import CardMedia from '@material-ui/core/CardMedia';import Image from 'next/image'
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import AssignmentIcon from '@material-ui/icons/Assignment';
@@ -49,23 +48,11 @@ export default function PageContentContact() {
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
+                <Image className={styles.carouselImage} src="/cartao1.png" alt="Vercel Logo" width={300} height={150} />
                 <Typography align="center">
                   {/* {tier.title} */}
                   Acessar
