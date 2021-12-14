@@ -6,7 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';import Image from 'next/image'
+import CardMedia from '@material-ui/core/CardMedia'; import Image from 'next/image'
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import AssignmentIcon from '@material-ui/icons/Assignment';
@@ -34,17 +34,10 @@ export default function PageContentContact() {
     <>
       <Container className={styles.pageContact} maxWidth="full" component="main">
         <Container>
-          <Typography className={styles.titleContact} align="center">
-            Cardiologia é mais que medicina.É arte
-          </Typography>
-          <Typography align="center">
-            CONTATO
-          </Typography>
-          <Grid className={styles.gridContact} pb={4} container spacing={2} alignItems="flex-center" justifyContent="center">
-            {/* {tiers.map((tier) => ( */}
+          <Grid className={styles.gridContact} pb={4} container spacing={7} alignItems="flex-center" justifyContent="center">
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
@@ -52,217 +45,140 @@ export default function PageContentContact() {
                   alignContent: 'center',
                 }}
               >
-                <Image className={styles.carouselImage} src="/cartao1.png" alt="Vercel Logo" width={300} height={150} />
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao1.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  ENTRE EM CONTATO PELO WHATS-APP
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao2.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  OUÇA NOSSA PLAYLIST
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao3.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  SIGA-NOS NO INSTAGRAM
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao4.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  ENTRE EM CONTATO POR LIGAÇÃO
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao5.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  ENTRE EM CONTATO POR EMAIL
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao6.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  SIGA-NOS NO FACEBOOK
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao7.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  LINKEDIN DR. ALCINO SÁ
                 </Typography>
               </Box>
             </Grid>
             <Grid
               item
-              xs={12}
+              xs={6}
               md={3}
             >
               <Box
-                className={styles.cardContact}
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
                   alignContent: 'center',
-                  height: 75,
                 }}
               >
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                  <WhatsAppIcon style={{ fill: "green" }} />
-                  <span>WhatsApp</span>
-                </div>
-                <Typography align="center">
-                  {/* {tier.title} */}
-                  Acessar
+                <Image className={styles.carouselImage} src="/cartao8.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                  ACESSE O SITE DA ARTEM
                 </Typography>
               </Box>
             </Grid>
-            {/* ))} */}
+            <Grid
+              item
+              xs={6}
+              md={3}
+            >
+              <Box
+                sx={{
+                  alignContent: 'center',
+                }}
+              >
+                <Image className={styles.carouselImage} src="/cartao9.png" alt="Vercel Logo" width={300} height={170} />
+                <Typography align="center" className={styles.textPrimary}>
+                SAIBA COMO CHEGAR
+                </Typography>
+              </Box>
+            </Grid>
           </Grid>
 
         </Container>
