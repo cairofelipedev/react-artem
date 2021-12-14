@@ -23,7 +23,6 @@ function ContactPage() {
       </Head>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
-      <AppBar />
       <ButtonNavWhats />
       <ContactContent />
       <Footer />

@@ -35,14 +35,6 @@ export default function CardsCurriculum() {
                   mb: 2,
                 }}
               >
-                {/* <Typography sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-                pb={3} className={styles.titleSecondary}>
-                Residência médica em clínica médica hospital Héliopolis-SP
-              </Typography> */}
                 <Typography pb={3} className={styles.titleSecondary}>
                   2000 - Residência médica em clínica médica - Hospital Heliópolis- SP
                 </Typography>
