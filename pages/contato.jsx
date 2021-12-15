@@ -20,6 +20,7 @@ function ContactPage() {
         <meta property="og:title" content="QUEM SOMOS - ARTEM CARDIOLOGIA INDIVIDUALIZADA" />
         <meta property="og:url" content="https://react-artem.vercel.app/quem-somos" />
         <meta property="og:image" content="https://react-artem.vercel.app/artem2.jpg" />
+        <meta name="facebook-domain-verification" content="0mkluqfdz4uszpiq52m1f18vq607gx" />
       </Head>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
