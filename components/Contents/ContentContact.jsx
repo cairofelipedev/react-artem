@@ -1,9 +1,10 @@
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container'
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
+import Typography from '@material-ui/core/Typography'
 import Image from 'next/image'
 import AppBarWhite from '../Navs/AppBarWhite'
+import Link from '@material-ui/core/Link'
 import styles from '../../styles/main.module.scss'
 
 export default function PageContentContact() {
@@ -26,16 +27,21 @@ export default function PageContentContact() {
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="https://wa.me/5586995620722"
+                  className={styles.navLink}
                 >
-                  <Image className={styles.carouselImage} src="/cartao1.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    ENTRE EM CONTATO PELO WHATS-APP
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao1.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      ENTRE EM CONTATO PELO WHATS-APP
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
               <Grid
                 item
