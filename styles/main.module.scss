@@ -130,12 +130,11 @@
 .pageContact {
   background-image: url("../public/background1.jpg");
 
-  .navLink a {
-    text-decoration: none;
-  }
-
   .gridContact {
     margin-top: 0.1px;
+    a {
+      text-decoration: none;
+    }
   }
 
   .cardContact {

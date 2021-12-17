@@ -29,7 +29,6 @@ export default function PageContentContact() {
               >
                 <Link
                   href="https://wa.me/5586995620722"
-                  className={styles.navLink}
                 >
                   <Box
                     sx={{
@@ -48,82 +47,102 @@ export default function PageContentContact() {
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="https://deezer.page.link/9GmQRsyD6MqNPp8MA"
                 >
-                  <Image className={styles.carouselImage} src="/cartao2.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    OUÇA NOSSA PLAYLIST
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao2.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      OUÇA NOSSA PLAYLIST
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
               <Grid
                 item
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="https://instagram.com/artemcardiologia"
                 >
-                  <Image className={styles.carouselImage} src="/cartao3.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    SIGA-NOS NO INSTAGRAM
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao3.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      SIGA-NOS NO INSTAGRAM
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
               <Grid
                 item
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="tel:86995620722"
                 >
-                  <Image className={styles.carouselImage} src="/cartao4.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    ENTRE EM CONTATO POR LIGAÇÃO
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao4.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      ENTRE EM CONTATO POR LIGAÇÃO
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
               <Grid
                 item
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="mailto:artemcardiologia@gmail.com"
                 >
-                  <Image className={styles.carouselImage} src="/cartao5.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    ENTRE EM CONTATO POR EMAIL
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao5.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      ENTRE EM CONTATO POR EMAIL
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
               <Grid
                 item
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="https://facebook.com/artemcardiologia"
                 >
-                  <Image className={styles.carouselImage} src="/cartao6.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    SIGA-NOS NO FACEBOOK
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao6.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      SIGA-NOS NO FACEBOOK
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
-              <Grid
+              {/* <Grid
                 item
                 xs={6}
                 md={3}
@@ -138,38 +157,46 @@ export default function PageContentContact() {
                     LINKEDIN DR. ALCINO SÁ
                   </Typography>
                 </Box>
+              </Grid> */}
+              <Grid
+                item
+                xs={6}
+                md={3}
+              >
+                <Link
+                  href="https://artemcardiologia.com.br"
+                >
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao8.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      ACESSE O SITE DA ARTEM
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
               <Grid
                 item
                 xs={6}
                 md={3}
               >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
+                <Link
+                  href="http://maps.google.com/maps?q=https:Torre I - Rua, Av. Sen. Arêa Leão, 2185 - sala 1414 - Jóquei, Teresina - PI, 64051-090"
                 >
-                  <Image className={styles.carouselImage} src="/cartao8.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    ACESSE O SITE DA ARTEM
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid
-                item
-                xs={6}
-                md={3}
-              >
-                <Box
-                  sx={{
-                    alignContent: 'center',
-                  }}
-                >
-                  <Image className={styles.carouselImage} src="/cartao9.png" alt="Vercel Logo" width={300} height={170} />
-                  <Typography align="center" className={styles.textPrimary}>
-                    SAIBA COMO CHEGAR
-                  </Typography>
-                </Box>
+                  <Box
+                    sx={{
+                      alignContent: 'center',
+                    }}
+                  >
+                    <Image className={styles.carouselImage} src="/cartao9.png" alt="Vercel Logo" width={300} height={170} />
+                    <Typography align="center" className={styles.textPrimary}>
+                      SAIBA COMO CHEGAR
+                    </Typography>
+                  </Box>
+                </Link>
               </Grid>
             </Grid>
 
