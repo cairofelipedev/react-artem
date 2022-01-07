@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from './Header'
+import Header from './Navs/Header'
 
 export default function Layout({ title, keywords, description, children }) {
   return (
