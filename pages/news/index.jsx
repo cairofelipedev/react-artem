@@ -8,26 +8,13 @@ import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CarouselBlog from '@/components/Carousel/CarouselBlog'
 import CssBaseline from '@material-ui/core/CssBaseline'
 export default function News({ news }) {
-  const settings = {
-    className: "center",
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false
-  };
+
   return (
     <div>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <Layout>
         <CarouselBlog />
-        {news.map((item) => (
-          <Slider {...settings}>
-            <BlogItem key={item.id} news={item} />
-          </Slider>
-        ))}
         <h1>Blog</h1>
         {news.length === 0 && <h3>No News</h3>}
         {news.map((item) => (
