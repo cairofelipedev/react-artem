@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 var a = [
-  '/images/sample/news1.jpg',
-  '/images/sample/news2.jpg',
-  '/images/sample/news3.jpg'
+  '/images/blog/news1.png',
+  '/images/blog/news2.png',
+  '/images/blog/news3.png'
  ]
 class Home extends Component {
   constructor() {
