@@ -1,1 +1,1 @@
-export const API_URL = process.env.NEXTJS_PUBLIC_URL || "https://www.artemcardiologia.com.br/api/news"
+export const API_URL = process.env.NEXTJS_PUBLIC_URL || "https://www.artemcardiologia.com.br"
