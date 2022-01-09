@@ -29,8 +29,8 @@ function CarouselBlog() {
   return (
     <Slider {...settings}>
       {list.map(item => (
-        <div className="px-2">
-          <img key={item.image} src={item.image} alt="Vercel Logo" />
+        <div key={item.image} className="px-2">
+          <img src={item.image} alt="Vercel Logo" />
         </div>
       ))}
     </Slider>
