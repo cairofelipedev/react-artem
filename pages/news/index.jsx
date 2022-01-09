@@ -1,8 +1,6 @@
 import Layout from '@/components/Layout'
 import { API_URL } from '@/config/index'
 import NewsItem from '@/components/NewsItem'
-import Slider from "react-slick"
-import BlogItem from '@/components/Carousel/CarouselBlogItem'
 import Link from 'next/link'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CarouselBlog from '@/components/Carousel/CarouselBlog'
