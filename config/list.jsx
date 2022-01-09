@@ -1,4 +1,4 @@
 export function getList() {
-  return fetch('https://www.artemcardiologia.com.br/api/news')
+  return fetch('http://localhost:3000/api/news')
     .then(data => data.json())
 }
