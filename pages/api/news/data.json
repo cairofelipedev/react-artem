@@ -1,0 +1,58 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "name": "5 dicas para manter sua pressão estável",
+      "slug": "5-dicas-para-manter-sua-pressão-estavel",
+      "date": "Jan 01, 2022",
+      "time": "10:00 AM",
+      "detail": "A Hipertensão Arterial acomete cerca de 30% da população adulta e é a principal causa isolada de morte cardiovascular no mundo. também a principal causa de acidente vascular cerebral...",
+      "image": "/images/blog/news1.png"
+    },
+    {
+      "id": "2",
+      "name": "Como funciona o exame deecodopplercardiograma",
+      "slug": "como-funciona-o-exame-deecodopplercardiograma",
+      "date": "Jan 01, 2022",
+      "time": "8:00 AM",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a varius nulla. Maecenas sit amet arcu placerat orci accumsan sagittis vel vitae nibh",
+      "image": "/images/blog/news2.png"
+    },
+    {
+      "id": "3",
+      "name": "Qual a pressão aórtica central ideal",
+      "slug": "qual-a-pressão a-ortica-central-ideal",
+      "date": "Jan 05, 2021",
+      "time": "7:00 PM EST",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a varius nulla. Maecenas sit amet arcu placerat orci accumsan sagittis vel vitae nibh",
+      "image": "/images/blog/news3.png"
+    },
+    {
+      "id": "4",
+      "name": "5 dicas para manter sua pressão estável",
+      "slug": "5-dicas-para-manter-sua-pressão-estavel",
+      "date": "Jan 01, 2022",
+      "time": "10:00 AM",
+      "detail": "A Hipertensão Arterial acomete cerca de 30% da população adulta e é a principal causa isolada de morte cardiovascular no mundo. também a principal causa de acidente vascular cerebral...",
+      "image": "/images/blog/news1.png"
+    },
+    {
+      "id": "5",
+      "name": "Como funciona o exame deecodopplercardiograma",
+      "slug": "como-funciona-o-exame-deecodopplercardiograma",
+      "date": "Jan 01, 2022",
+      "time": "8:00 AM",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a varius nulla. Maecenas sit amet arcu placerat orci accumsan sagittis vel vitae nibh",
+      "image": "/images/blog/news2.png"
+    },
+    {
+      "id": "6",
+      "name": "Qual a pressão aórtica central ideal",
+      "slug": "qual-a-pressão a-ortica-central-ideal",
+      "date": "Jan 05, 2021",
+      "time": "7:00 PM EST",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a varius nulla. Maecenas sit amet arcu placerat orci accumsan sagittis vel vitae nibh",
+      "image": "/images/blog/news3.png"
+    }
+  ]
+}
