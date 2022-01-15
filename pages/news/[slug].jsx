@@ -9,7 +9,7 @@ export default function SingleNews({ news }) {
   return (
     <Layout>
       <div>
-        <span> {news.time}</span>
+        <span>{moment(news.date).format("yyyy-MM-DD")} {news.time}</span>
         <h1>{news.name}</h1>
         {news.image && (
           <div>
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 
