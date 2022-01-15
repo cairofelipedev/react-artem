@@ -1,19 +1,15 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import moment from "moment"
 
 export default function NewsItem({ news }) {
   return (
     <div>
       <div>
-        <Image
-          src={news.image ? news.image : "No Image"}
-          width={150}
-          height={100}
-        />
+        <img src={news.image ? news.image.formats.thumbnail.url : "No Image"} width="100%" height="350px" />
       </div>
       <div>
         <span>
-          {news.date} {news.time}
+          {moment(news.date).format("yyyy-MM-DD")} {news.time}
           <h3>{news.name}</h3>
         </span>
       </div>

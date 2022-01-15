@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getList } from '@/config/list'
 import Slider from "react-slick"
+
 function CarouselBlog() {
   const settings = {
     className: "center",
@@ -30,7 +31,8 @@ function CarouselBlog() {
     <Slider {...settings}>
       {list.map(item => (
         <div key={item.image} className="px-2">
-          <img src={item.image} alt="Vercel Logo" />
+          <img src={item.image.formats.thumbnail.url} width="100%" height="350px"/>
+          <h3>{item.name}</h3>
         </div>
       ))}
     </Slider>

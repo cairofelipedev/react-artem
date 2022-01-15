@@ -2,18 +2,18 @@ import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import { API_URL } from '@/config/index'
 import Link from 'next/link'
-import Image from 'next/image'
+import moment from "moment"
 
 export default function SingleNews({ news }) {
   const router = useRouter();
   return (
     <Layout>
       <div>
-        <span>{news.date} {news.time}</span>
+        <span>{moment(news.date).format("yyyy-MM-DD")} {news.time}</span>
         <h1>{news.name}</h1>
         {news.image && (
           <div>
-            <Image src={news.image} width={900} height={600} />
+            <img src={news.image.formats.thumbnail.url} />
           </div>
         )}
         <p>{news.detail}</p>
@@ -26,7 +26,7 @@ export default function SingleNews({ news }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`${API_URL}/api/news`)
+  const res = await fetch(`${API_URL}/posts`)
   const news = await res.json();
   const paths = news.map((item) => ({
     params: { slug: item.slug },
@@ -39,7 +39,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const res = await fetch(`${API_URL}/api/news/${slug}`);
+  const res = await fetch(`${API_URL}/posts?slug=${slug}`);
   const singleNews = await res.json();
   return {
     props: {

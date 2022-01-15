@@ -5,6 +5,7 @@ import Link from 'next/link'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CarouselBlog from '@/components/Carousel/CarouselBlog'
 import CssBaseline from '@material-ui/core/CssBaseline'
+import styles from '@/styles/main.module.scss'
 export default function News({ news }) {
 
   return (
@@ -13,21 +14,25 @@ export default function News({ news }) {
       <CssBaseline />
       <Layout>
         <CarouselBlog />
-        <h1>Blog</h1>
-        {news.length === 0 && <h3>No News</h3>}
-        {news.map((item) => (
-          <NewsItem key={item.id} news={item} />
-        ))}
-        <Link href="/">
-          <a>Go Back</a>
-        </Link>
+        <div className={styles.blogPage}>
+          <h1>CONFIRA AS ÚLTIMAS
+            PUBLICAÇÕES DO BLOG
+          </h1>
+          {news.length === 0 && <h3>No News</h3>}
+          {news.map((item) => (
+            <NewsItem key={item.id} news={item} />
+          ))}
+          <Link href="/">
+            <a>Go Back</a>
+          </Link>
+        </div>
       </Layout>
     </div>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/news`)
+  const res = await fetch(`${API_URL}/posts`)
   const news = await res.json()
 
   return {

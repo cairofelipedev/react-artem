@@ -1,4 +1,4 @@
 export function getList() {
-  return fetch('http://localhost:3000/api/news')
+  return fetch('https://app-strapi-artem.herokuapp.com/posts')
     .then(data => data.json())
 }
