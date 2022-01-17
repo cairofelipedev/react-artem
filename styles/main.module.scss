@@ -315,7 +315,6 @@
   .blogPageContain {
     background-color: #E9EEF6;
     border-radius   : 40px;
-
   }
 
 }
@@ -369,6 +368,7 @@
   text-align      : center;
   border-radius   : 40px 40px 40px 40px;
   background-color: #1d436c;
+  padding-bottom:50px;
 
   img {
     border-radius: 40px 40px 0px 0px;
@@ -480,6 +480,14 @@
     .titleMain {
       font-size  : 40px;
     }
+  }
+  .blogPage {
+    .blogPageContain {
+      margin-top:30px;
+      padding-top:10px;
+      padding-bottom: 20px;
+    }
+  
   }
 }
 

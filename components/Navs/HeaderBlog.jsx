@@ -25,7 +25,7 @@ export default function AppNavBar() {
               <div className={styles.nav}>
                 <Link
                   variant="button"
-                  href="quem-somos"
+                  href="../quem-somos"
                   sx={{ my: 1, mx: 1.5 }}
                   className={styles.navLink}
                 >
@@ -33,7 +33,7 @@ export default function AppNavBar() {
                 </Link>
                 <Link
                   variant="button"
-                  href="#servicos"
+                  href="../#servicos"
                   sx={{ my: 1, mx: 1.5 }}
                   className={styles.navLink}
                 >
