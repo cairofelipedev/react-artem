@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import styles from '../../styles/main.module.scss'
 import Button from '@material-ui/core/Button'
+import Link from 'next/link'
 
 
 export default function ContentBlog() {
@@ -16,11 +17,12 @@ export default function ContentBlog() {
               xs={12}
               md={6}
               container
+              justifyContent="center"
             >
               <Typography
                 className={styles.titleMain}
               >
-                Blog Artem
+                Conheça o Blog Artem
               </Typography>
             </Grid>
             <Grid
@@ -28,10 +30,13 @@ export default function ContentBlog() {
               xs={8}
               md={6}
               container
+              justifyContent="center"
             >
-                <Button type="submit">
-                  Entre em contato
+              <Link href="/blog">
+                <Button className={styles.button}>
+                  Acessar
                 </Button>
+              </Link>
             </Grid>
           </Grid>
         </Container>

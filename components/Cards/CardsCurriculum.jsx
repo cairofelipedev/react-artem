@@ -1,7 +1,6 @@
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Typography from '@material-ui/core/Typography';
 import CarouselDr from '../Carousel/CarouselDr'
 import styles from '../../styles/main.module.scss'

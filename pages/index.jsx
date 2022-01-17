@@ -9,8 +9,7 @@ import CardsCurriculum from '@/components/Cards/CardsCurriculum'
 import Footer from '@/components/Navs/Footer';
 import ButtonNavWhats from '@/components/Navs/ButtonNav'
 import { API_URL } from '@/config/index'
-import NewsItem from '@/components/NewsItem'
-import Link from 'next/link'
+import NewsItemHome from '@/components/NewsItemHome'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import ContentBlog from '@/components/Contents/BlogContent';
@@ -39,13 +38,8 @@ export default function Home({ news }) {
       <ContentBlog/>
       {news.length === 0 && <h3>No News</h3>}
       {news.map((item) => (
-        <NewsItem key={item.id} news={item} />
+        <NewsItemHome key={item.id} news={item} />
       ))}
-      {news.length > 0 && (
-        <Link href="/news">
-          <a className="btn-secondaty"> Ver todo blog</a>
-        </Link>
-      )}
       <FormHome />
       <Footer />
     </React.Fragment>

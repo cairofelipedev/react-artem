@@ -1,11 +1,13 @@
 import Layout from '@/components/Layout'
 import { API_URL } from '@/config/index'
 import NewsItem from '@/components/NewsItem'
-import Link from 'next/link'
+import Grid from '@material-ui/core/Grid'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
-import CarouselBlog from '@/components/Carousel/CarouselBlog'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import styles from '@/styles/main.module.scss'
+import { Container } from '@material-ui/core'
+import FormHome from '@/components/Contents/FormContent'
+import Footer from '@/components/Navs/Footer';
 export default function News({ news }) {
 
   return (
@@ -13,19 +15,27 @@ export default function News({ news }) {
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <Layout>
-        <CarouselBlog />
         <div className={styles.blogPage}>
-          <h1>CONFIRA AS ÚLTIMAS
-            PUBLICAÇÕES DO BLOG
-          </h1>
-          {news.length === 0 && <h3>No News</h3>}
-          {news.map((item) => (
-            <NewsItem key={item.id} news={item} />
-          ))}
-          <Link href="/">
-            <a>Go Back</a>
-          </Link>
+          <Container>
+            <h1>CONFIRA AS ÚLTIMAS
+              PUBLICAÇÕES DO BLOG
+            </h1>
+          </Container>
+          <Grid className={styles.gridContact} pb={4} container spacing={7} alignItems="flex-center" justifyContent="center">
+            {news.length === 0 && <h3>No News</h3>}
+            {news.map((item) => (
+              <Grid
+                item
+                xs={10}
+                md={3}
+              >
+                <NewsItem key={item.id} news={item} />
+              </Grid>
+            ))}
+          </Grid>
         </div>
+        <FormHome />
+        <Footer />
       </Layout>
     </div>
   )
