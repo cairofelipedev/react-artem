@@ -9,7 +9,7 @@ export default function NewsItemHome({ news }) {
   return (
     <div>
       <Container className={styles.newsItemHome} maxWidth="full" component="main">
-        <Grid p={4} container alignItems="center" justifyContent="center">
+        <Grid p={2} container alignItems="center" justifyContent="center">
           <Grid
             item
             xs={12}
@@ -38,8 +38,8 @@ export default function NewsItemHome({ news }) {
                   {news.detail}
                 </Typography>
                 <div>
-                  <Link href={`/blog/${news.slug}`}>
-                    <a className="btnBloghome">Leia mais</a>
+                  <Link className={styles.btnPostHome} href={`/blog/${news.slug}`}>
+                  <a>Leia mais</a>
                   </Link>
                 </div>
               </Box>
