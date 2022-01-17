@@ -7,6 +7,7 @@ import CardsHome from '@/components/Cards/CardsHome'
 import FormHome from '@/components/Contents/FormContent'
 import CardsCurriculum from '@/components/Cards/CardsCurriculum'
 import Footer from '@/components/Navs/Footer';
+import Box from '@material-ui/core/Box';
 import ButtonNavWhats from '@/components/Navs/ButtonNav'
 import { API_URL } from '@/config/index'
 import NewsItemHome from '@/components/NewsItemHome'
@@ -35,10 +36,12 @@ export default function Home({ news }) {
       <AboutHome />
       <CardsHome />
       <CardsCurriculum />
-      <ContentBlog/>
+      <ContentBlog />
       {news.length === 0 && <h3>No News</h3>}
       {news.map((item) => (
-        <NewsItemHome key={item.id} news={item} />
+        <Box key={item.id}>
+          <NewsItemHome news={item} />
+        </Box>
       ))}
       <FormHome />
       <Footer />
