@@ -27,8 +27,9 @@ export default function News({ news }) {
                 item
                 xs={10}
                 md={3}
+                key={item.id} 
               >
-                <NewsItem key={item.id} news={item} />
+                <NewsItem news={item} />
               </Grid>
             ))}
           </Grid>
