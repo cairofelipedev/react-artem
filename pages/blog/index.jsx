@@ -1,7 +1,8 @@
 import Layout from '@/components/Layout'
 import { API_URL } from '@/config/index'
 import NewsItem from '@/components/NewsItem'
-import Link from 'next/link'
+import FormHome from '@/components/Contents/FormContent'
+import Footer from '@/components/Navs/Footer';
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import styles from '@/styles/main.module.scss'
@@ -34,6 +35,8 @@ export default function News({ news }) {
             ))}
           </Grid>
         </div>
+        <FormHome />
+        <Footer />
       </Layout>
     </div>
   )
