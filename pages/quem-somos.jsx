@@ -18,6 +18,7 @@ function AboutPage() {
         <title>QUEM SOMOS - ARTEM CARDIOLOGIA INDIVIDUALIZADA</title>
         <link rel="icon" href="/artem.ico" />
         <meta name="description" content="ARTEM CARDIOLOGIA INDIVIDUALIZADA - Serviço médico especializado e indiviadualizado" />
+        <meta name="keywords" content="Artem, Artem Cardiologia, Aretem Cardiologia Especializada, Alcino Sá, Arteris, Cardiologia, Cariologista, Hipertensão, Problemas Cardiaco, Problemas no coração, pressão arterial, Cardiologista em Teresina" />
         <meta property="og:title" content="ARTEM CARDIOLOGIA INDIVIDUALIZADA" />
         <meta property="og:url" content="https://www.artemcardiologia.com.br/quem-somos" />
         <meta property="og:image" content="https://www.artemcardiologia.com.br/artem2.jpg" />

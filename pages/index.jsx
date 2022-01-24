@@ -7,13 +7,13 @@ import CardsHome from '@/components/Cards/CardsHome'
 import FormHome from '@/components/Contents/FormContent'
 import CardsCurriculum from '@/components/Cards/CardsCurriculum'
 import Footer from '@/components/Navs/Footer';
-import Box from '@material-ui/core/Box';
+// import Box from '@material-ui/core/Box';
 import ButtonNavWhats from '@/components/Navs/ButtonNav'
 import { API_URL } from '@/config/index'
-import NewsItemHome from '@/components/NewsItemHome'
+// import NewsItemHome from '@/components/NewsItemHome'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import ContentBlog from '@/components/Contents/BlogContent';
+// import ContentBlog from '@/components/Contents/BlogContent';
 
 export default function Home({ news }) {
 
@@ -23,6 +23,7 @@ export default function Home({ news }) {
         <title>ARTEM CARDIOLOGIA INDIVIDUALIZADA</title>
         <link rel="icon" href="/artem.ico" />
         <meta name="description" content="ARTEM CARDIOLOGIA INDIVIDUALIZADA - Serviço médico especializado e indiviadualizado" />
+        <meta name="keywords" content="Artem, Artem Cardiologia, Aretem Cardiologia Especializada, Alcino Sá, Arteris, Cardiologia, Cariologista, Hipertensão, Problemas Cardiaco, Problemas no coração, pressão arterial, Cardiologista em Teresina" />
         <meta property="og:title" content="ARTEM CARDIOLOGIA INDIVIDUALIZADA" />
         <meta property="og:url" content="https://www.artemcardiologia.com.br/" />
         <meta property="og:image" content="https://www.artemcardiologia.com.br/artem2.jpg" />
@@ -36,13 +37,13 @@ export default function Home({ news }) {
       <AboutHome />
       <CardsHome />
       <CardsCurriculum />
-      <ContentBlog />
+      {/* <ContentBlog />
       {news.length === 0 && <h3>No News</h3>}
       {news.map((item) => (
         <Box key={item.id}>
           <NewsItemHome news={item} />
         </Box>
-      ))}
+      ))} */}
       <FormHome />
       <Footer />
     </React.Fragment>

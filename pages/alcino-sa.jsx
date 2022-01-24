@@ -17,6 +17,7 @@ function AlcinoPage() {
         <title>DR. ALCINO SÁ - ARTEM CARDIOLOGIA INDIVIDUALIZADA</title>
         <link rel="icon" href="/artem.ico" />
         <meta name="description" content="Dr. Alcino Sá Cardiologista" />
+        <meta name="keywords" content="Artem, Artem Cardiologia, Aretem Cardiologia Especializada, Alcino Sá, Arteris, Cardiologia, Cariologista, Hipertensão, Problemas Cardiaco, Problemas no coração, pressão arterial, Cardiologista em Teresina" />
         <meta property="og:title" content="DR. ALCINO SÁ - ARTEM CARDIOLOGIA INDIVIDUALIZADA" />
         <meta property="og:url" content="https://www.artemcardiologia.com.br/alcino-sa" />
         <meta property="og:image" content="https://www.artemcardiologia.com.br/artem2.jpg" />
