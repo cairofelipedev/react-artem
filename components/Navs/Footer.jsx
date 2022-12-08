@@ -87,14 +87,6 @@ export default function Footer() {
                     </Typography>
                   </Link>
                 </li>
-                <li>
-                  <Link style={{ textDecoration: 'none' }} href="#">
-                    <Typography className={styles.titleSecondary} color="#222957">
-                      Localização: Manhattan River Center - Torre I sala 1414
-                      Rua, Av. Sen. Area Leão, 2185. Jóquei, Teresina - PI, 64051-090
-                    </Typography>
-                  </Link>
-                </li>
               </ul>
             </Grid>
             <Grid item xs={6} sm={3}>
@@ -135,6 +127,10 @@ export default function Footer() {
             <Grid item xs={6} sm={3}>
               <Typography className={styles.titleMain} color="#222957" gutterBottom>
                 Agende sua consulta
+              </Typography>
+              <Typography className={styles.titleSecondary} color="#222957">
+                Localização: Manhattan River Center - Torre I sala 1414
+                Rua, Av. Sen. Area Leão, 2185. Jóquei, Teresina - PI, 64051-090
               </Typography>
             </Grid>
           </Grid>
