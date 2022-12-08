@@ -90,7 +90,8 @@ export default function Footer() {
                 <li>
                   <Link style={{ textDecoration: 'none' }} href="#">
                     <Typography className={styles.titleSecondary} color="#222957">
-                      Localização: Manhattan River Center
+                      Localização: Manhattan River Center - Torre I sala 1414
+                      Rua, Av. Sen. Area Leão, 2185. Jóquei, Teresina - PI, 64051-090
                     </Typography>
                   </Link>
                 </li>

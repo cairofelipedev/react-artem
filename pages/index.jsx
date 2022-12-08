@@ -9,7 +9,6 @@ import CardsCurriculum from '@/components/Cards/CardsCurriculum'
 import Footer from '@/components/Navs/Footer';
 // import Box from '@material-ui/core/Box';
 import ButtonNavWhats from '@/components/Navs/ButtonNav'
-import { API_URL } from '@/config/index'
 // import NewsItemHome from '@/components/NewsItemHome'
 import GlobalStyles from '@material-ui/core/GlobalStyles'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -48,14 +47,4 @@ export default function Home({ news }) {
       <Footer />
     </React.Fragment>
   )
-}
-
-export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/posts`)
-  const news = await res.json()
-
-  return {
-    props: { news: news.slice(0, 5) },
-    revalidate: 1
-  }
 }
