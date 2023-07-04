@@ -81,7 +81,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
+                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722&text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20no%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7oes">
                     <Typography className={styles.titleSecondary} color="#222957">
                       Agendamento
                     </Typography>
@@ -109,7 +109,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722">
+                  <Link style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=5586995620722&text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20no%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7oes">
                     <Typography className={styles.titleSecondary} color="#222957">
                       Consultoria
                     </Typography>
@@ -137,7 +137,7 @@ export default function Footer() {
         </Container>
         <Copyright sx={{ mt: 5 }} />
         <Typography color="#222957" align="center">
-          <Link color="inherit" variant="body2" href="https://api.whatsapp.com/send?phone=5586999633288&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+de+site.">
+          <Link color="inherit" variant="body2" href="https://api.whatsapp.com/send?phone=5586999598080&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+de+site">
             Web Developer: Cairo Felipe Dev
           </Link>{' '}
         </Typography>

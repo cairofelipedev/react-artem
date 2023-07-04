@@ -55,7 +55,7 @@ export default function AppNavBar() {
                   HIPERTENSÃO SEM TENSÃO
                 </Link> */}
                 <Link
-                  href="https://api.whatsapp.com/send?phone=5586995620722"
+                  href="https://api.whatsapp.com/send?phone=5586995620722&text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20no%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7oes"
                   pr={1}
                 >
                   <WhatsAppIcon sx={{ fontSize: 35 }} />
