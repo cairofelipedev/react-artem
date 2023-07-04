@@ -31,7 +31,7 @@ export default function Hero() {
                 SEJA BEM VINDO A UM ATENDIMENTO PERSONALIZADO
               </Typography>
             </Grid>
-            <Button href="https://api.whatsapp.com/send?phone=5586995620722" className={styles.btnHero1}>
+            <Button href="https://api.whatsapp.com/send?phone=5586995620722&text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20no%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7oes" className={styles.btnHero1}>
               CONTATO
             </Button>
             <Button href="quem-somos" className={styles.btnHero2}>
